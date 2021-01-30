@@ -1,0 +1,95 @@
+body div{
+    border: 1px solid black;
+}
+
+.title-container{
+    display: flex;
+}
+
+.top-half{
+    display: flex;
+}
+
+.slogan-picture{
+    display: flex;
+}
+
+.slogan-container{
+    display: flex;
+}
+
+.picture-container{
+    display: flex;
+}
+
+.search-box-container{
+    display: flex;
+}
+
+.search-title{
+
+}
+
+.search-bar-landing{
+
+}
+
+.news-source-bias{
+
+}
+
+.news-source-bias-title{
+
+}
+
+.news-source-options{
+
+}
+
+.author-bias{
+
+}
+
+.author-bias-title{
+
+}
+
+.author-bias-options{
+
+}
+
+.search-button{
+
+}
+
+.bottom-half{
+    display: flex;
+}
+
+.need-statement-hackathon{
+    display: flex;
+}
+
+.need-statement-container{
+    display: flex;
+}
+
+.hackathon-container{
+    display: flex;
+}
+
+.about-us-container{
+    display: flex;
+}
+
+.about-us-title{
+
+}
+
+.people-cards{
+
+}
+
+.people-cards div{
+    
+}
