@@ -4,7 +4,7 @@ body {
 
 body div {
     color: white;
-    /* border: 1px solid white; */
+    /* border: 1px solid black; */
 }
 
 .title-container{
@@ -97,8 +97,8 @@ body div {
     display: flex;
 }
 
-.search-bar-landing input {
-    width: 100%;
+.form-outline {
+    width:83%;
 }
 
 .news-source-bias{
