@@ -93,6 +93,10 @@ body div {
 
 }
 
+#search-button{
+    color: white;
+}
+
 .search-bar-landing{
     display: flex;
 }

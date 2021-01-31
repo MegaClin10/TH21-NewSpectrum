@@ -53,9 +53,9 @@
                               <input id="search-input" type="search" id="form1" class="form-control" />
                               <label class="form-label" for="form1">Topic...</label>
                             </div>
-                            <button id="search-button" type="button" class="btn btn-primary">
-                              <i class="fas fa-search"></i>
-                            </button>
+                            <a id="search-button" href="main.html"><button onclick=changePage() id="search-button" type="button" class="btn btn-primary">
+                                <i class="fas fa-search"></i>
+                            </button></a>
                           </div>
                     </div>
 
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="search-button">
-                        <button class="btn btn-primary">SEARCH</button>
+                        <a><button class="btn btn-primary" onclick="changePage()">SEARCH</button></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +178,7 @@
                       </div>
 
                       <div class="card card-text" style="width: 18rem;">
-                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/antonio.jpg" alt="Card image cap">
                         <div class="card-body text-dark">
                           <h5 class="card-title">Antonio Vellega</h5>
                           <ul>
@@ -193,5 +193,6 @@
        </div>
 
        <script src="index.js"></script>
+       <script src="main.js"></script>
     </body>
 </html>
