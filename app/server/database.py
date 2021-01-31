@@ -2,14 +2,10 @@ from pymongo import MongoClient
 import json
 import os
 from bson.objectid import ObjectId
+from decouple import config
+from scripts.get_news_everything import get_news_everything
 
-secrets_dir = os.path.dirname(__file__)
-rel_path = "../../secrets.json"
-abs_file_path = os.path.join(secrets_dir, rel_path)
-
-secrets = json.load(open(abs_file_path))
-MONGO_SERVICE_KEY = secrets["mongo-service-key"]
-MONGO_DETAILS = "mongodb+srv://worker:" + MONGO_SERVICE_KEY + "@development.zukcn.mongodb.net/TAMUhack?retryWrites=true&w=majority"
+MONGO_DETAILS = config('MONGO_DETAILS')
 
 client = MongoClient(MONGO_DETAILS)
 db = client.TAMUhack
@@ -132,9 +128,10 @@ async def delete_source(id: str):
         return True
 
 # Retrieves all articles in the database
-async def retrieve_articles():
+async def retrieve_articles(q: str):
     articles = []
-    for article in article_collection.find():
+    get_news_everything(q)
+    for article in article_collection.find({'query': q}):
         articles.append(article_helper(article))
     return articles
 

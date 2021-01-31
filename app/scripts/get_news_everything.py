@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from newsapi import NewsApiClient
 import json
+import os
 
 def get_news_everything(query):
     newsapi = NewsApiClient(api_key=grab_credentials('news-api-key'))
@@ -42,5 +43,9 @@ def connect_to_mongo_db():
     return db
 
 def grab_credentials(key):
-    secrets = json.load(open("../../secrets.json"))
+    secrets_dir = os.path.dirname(__file__)
+    rel_path = "../../secrets.json"
+    abs_file_path = os.path.join(secrets_dir, rel_path)
+
+    secrets = json.load(open(abs_file_path))
     return secrets[key]
