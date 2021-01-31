@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from newsapi import NewsApiClient
+from decouple import config
 import json
 import os
 
@@ -43,9 +44,5 @@ def connect_to_mongo_db():
     return db
 
 def grab_credentials(key):
-    secrets_dir = os.path.dirname(__file__)
-    rel_path = "../../secrets.json"
-    abs_file_path = os.path.join(secrets_dir, rel_path)
-
-    secrets = json.load(open(abs_file_path))
-    return secrets[key]
+    NEWS_API_KEY = config('MONGO_DETAILS')
+    return NEWS_API_KEY
