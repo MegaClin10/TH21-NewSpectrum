@@ -3,7 +3,7 @@ import json
 import os
 from bson.objectid import ObjectId
 from decouple import config
-from scripts.get_news_everything import get_news_everything
+from app.scripts.get_news_everything import get_news_everything
 
 MONGO_DETAILS = config('MONGO_DETAILS')
 
