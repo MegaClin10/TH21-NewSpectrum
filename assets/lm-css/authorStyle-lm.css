@@ -18,7 +18,7 @@ body div {
 }
 
 .title{
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     color: white;
@@ -39,6 +39,8 @@ body div {
 
 .author-picture {
     display: flex;
+    border: 10px solid red;
+    border-radius: 110px;
 }
 
 .author-picture img{
@@ -58,7 +60,7 @@ body div {
 .stat-bar{
     display: flex;
     width: 100%;
-    height:36%;
+    height:30%;
     justify-content: center;
 }
 
@@ -70,47 +72,45 @@ body div {
 }
 
 .middle-half{
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
 
 .stat-title{
+    justify-content: center;
     display: flex;
-    margin-left: 5px;
 }
 
 .vote-count-container{
     display:flex;
     flex-direction: column;
-    margin-left: 20px;
 }
 
-.progressive-count{
-    display: flex;
-}
-
-.neutral-count{
-    display: flex;
-}
-
-.conservative-count{
-    display: flex;
+.vote-count-container h3 {
+    text-align: center;
 }
 
 .lower-half{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .news-article-title{
     display: flex;
-    margin-left: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
 }
 
 .article {
     max-width: 1000px;
-    margin-right: 100px;
-    margin-left: 20px;
 
     border: 3px solid red;
     border-radius: 10px;
