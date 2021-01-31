@@ -33,7 +33,6 @@ async def get_authors():
 
 @router.get("/", response_description="Author data retrieved")
 async def get_author_data(fullname: str):
-    print(fullname)
     author = await retrieve_author(fullname)
     if author:
         return ResponseModel(author, "Author data retrieved successfully")
