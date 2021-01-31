@@ -20,7 +20,10 @@ def author_helper(author) -> dict:
     return {
         "id": str(author["_id"]),
         "fullname": author["fullname"],
-        "rating": author["rating"]
+        "rating": author["rating"],
+        "consr_votes": author["consr_votes"],
+        "libr_votes": author["libr_votes"],
+        "neutr-votes": author["neutr-votes"]
     }
 
 def source_helper(source) -> dict:
