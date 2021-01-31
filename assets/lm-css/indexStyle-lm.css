@@ -15,6 +15,7 @@ body div {
 
 .title-container h1 {
     margin-left: 80px;
+    font-size: 80px;
 }
 
 .top-half{
@@ -27,46 +28,64 @@ body div {
     display: flex;
     flex-direction: column;
     width: 750px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .slogan-container{
     display: flex;
-    margin-bottom: 50px;
+    /* margin-bottom: 20px; */
     justify-content: center;
 }
 
+.slogan-container h3 {
+    font-size: 40px;
+}
+
+/* 
 .picture-container{
     display: flex;
     justify-content: center;
     padding: 30px 0 50px 0;
-}
+} */
 
-.picture-container img{
+/* .picture-container img{
     border-radius: 10px;
     width: 410px;
-    height: 300px;
-}
+    height: auto;
+} */
 
 .fill-div{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .search-box-container{
     display: flex;
     flex-direction: column;
-    width: 300;
+    width: 400px;
     padding: 20px;
     box-shadow: 0 0 32px rgba(0, 0, 0, .5);
-    background: rgba(255, 255, 255, .05);
-    backdrop-filter: blur(20px);
-    border-radius: 30px;
+    background-color: white;
+    /* background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(20px); */
+    border-radius: 5px;
     height: 500px;
     justify-content: space-evenly;
     margin-right: 150px;
+}
+
+.search-box-container p {
+    color: black;
+}
+
+.search-box-container h5 {
+    color: black;
+}
+
+.search-box-container label {
+    color: black;
 }
 
 .search-title{
