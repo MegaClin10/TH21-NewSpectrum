@@ -31,7 +31,8 @@ The American News Spectrum was built with the following libraries and resources
 
 ### Prerequisites
 
-Since Smithers is hosted remotely, no prerequisites are required except an internet connection. :electric_plug:
+* Python 3.7 or greater
+* pip
 
 ### Installation
 **I don't have secrets**
