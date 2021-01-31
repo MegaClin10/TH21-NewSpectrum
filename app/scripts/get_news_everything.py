@@ -17,8 +17,9 @@ def get_news_everything(query):
         all_articles = newsapi.get_everything(q=query, sort_by="relevancy", language='en')
 
         # add to database
-        all_articles["query"] = query.lower()
-        db['cached-news'].insert_one(all_articles)
+        for article in all_articles["articles"]:
+            article["query"] = query.lower()
+            db['cached-news'].insert_one(article)
 
 def check_database_existing(query):
     # check the database
@@ -41,5 +42,5 @@ def connect_to_mongo_db():
     return db
 
 def grab_credentials(key):
-    secrets = json.load(open("../secrets.json"))
+    secrets = json.load(open("../../secrets.json"))
     return secrets[key]
