@@ -10,6 +10,7 @@ body div {
 .title-container{
     display: flex;
     padding-top: 100px;
+    /* justify-content: center; */
 }
 
 .title-container h1 {
@@ -32,12 +33,26 @@ body div {
 .slogan-container{
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .picture-container{
     display: flex;
     justify-content: center;
     padding: 30px 0 50px 0;
+}
+
+.picture-container img{
+    border-radius: 10px;
+    width: 410px;
+    height: 300px;
+}
+
+.fill-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 .search-box-container{
@@ -49,6 +64,9 @@ body div {
     background: rgba(255, 255, 255, .05);
     backdrop-filter: blur(20px);
     border-radius: 30px;
+    height: 500px;
+    justify-content: space-evenly;
+    margin-right: 150px;
 }
 
 .search-title{
@@ -72,13 +90,19 @@ body div {
 
 .news-source-bias-title{
     display: flex;
-
+    margin-top: 10px;
 }
 
 .news-source-options{
     display: flex;
     flex-direction: column;
 
+}
+
+.checkbox-spectrum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .author-bias{
@@ -99,13 +123,18 @@ body div {
 
 .search-button{
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
+.search-button button{
+    border-radius: 10px;
 }
 
 .bottom-half{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 210px;
 }
 
 .need-statement-hackathon{
@@ -117,6 +146,10 @@ body div {
     display: flex;
     flex-direction: column;
     width: 500px;
+}
+
+.need-statement-title{
+    text-align: center;
 }
 
 .hackathon-container{
@@ -146,11 +179,5 @@ body div {
 .people-cards{
     display: flex;
     justify-content: space-evenly;
-    margin: 0 200px 0 200px;
-    height: 300px;
-}
-
-.people-cards div{
-    width: 200px;
-
+    margin: 50px 200px 50px 200px;
 }
