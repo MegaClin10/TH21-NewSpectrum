@@ -102,11 +102,22 @@ body div {
   }
 
 .title{
+    font-family: 'Times New Roman', Times, sans-serif;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    font-size: 2em;
     color: white;
 } 
+
+.title h1 {
+  display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 .article-name{
     display: flex;
