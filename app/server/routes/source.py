@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from server.database import (
+from app.server.database import (
     add_source,
     delete_source,
     retrieve_source,
@@ -9,7 +9,7 @@ from server.database import (
     update_source,
 )
 
-from server.models.source import (
+from app.server.models.source import (
     ErrorResponseModel,
     ResponseModel,
     SourceSchema,

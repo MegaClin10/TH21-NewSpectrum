@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from server.database import (
+from app.server.database import (
     retrieve_article,
     retrieve_articles,
 )
 
-from server.models.article import (
+from app.server.models.article import (
     ErrorResponseModel,
     ResponseModel,
     ArticleSchema,

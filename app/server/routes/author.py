@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from server.database import (
+from app.server.database import (
     add_author,
     delete_author,
     retrieve_author,
@@ -9,7 +9,7 @@ from server.database import (
     update_author,
 )
 
-from server.models.author import (
+from app.server.models.author import (
     ErrorResponseModel,
     ResponseModel,
     AuthorSchema,
