@@ -10,63 +10,79 @@
     </head>
     <body>
         <div class="title-container">
-            <h1 class="title">Title</h1>
+            <h1 class="title">The American News Spectrum</h1>
         </div>
 
        <div class="top-half">
             <div class="slogan-picture">
                 <div class="slogan-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illo, explicabo consequuntur quibusdam veniam illum, dolore, similique praesentium rem necessitatibus doloremque accusamus quidem eum aliquam recusandae facilis dolor excepturi aperiam?</p>
+                    <h3>The Place where news doesn't get censored.</h3>
                 </div>
                 <div class="picture-container">
-                    <img src="assets/images/test_pic.jfif" alt="">
+                    <img src="assets/images/american-capital.jfif" alt="">
                 </div>
             </div>
-            <div class="search-box-container">
-                <div class="search-title">
-                    <h5>Search</h5>
-                </div>
 
-                <div class="search-bar-landing">
-                    <input type="text" placeholder="Search for Topic...">
-                </div>
-
-                <div class="news-source-bias">
-                    <div class="news-source-bias-title">
-                        <p>News Source</p>
+            <div class="fill-div">
+                <div class="search-box-container">
+                    <div class="search-title">
+                        <h5>Search</h5>
                     </div>
 
-                    <div class="news-source-options">
-                        <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
-                        <label for="progressive"> Progressive</label><br>
-
-                        <input type="checkbox" name="news-source-bias" id="neutral" value="neutral" checked>
-                        <label for="neutral">Neutral</label><br>
-
-                        <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
-                        <label for="conservative"> Conservative</label><br>
-                    </div>
-                </div>
-
-                <div class="author-bias">
-                    <div class="author-bias-title">
-                        <p>Author Bias</p>
+                    <div class="search-bar-landing">
+                        <input type="text" placeholder="Search for Topic...">
                     </div>
 
-                    <div class="author-bias-options">
-                        <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
-                        <label for="progressive"> Progressive</label><br>
+                    <div class="news-source-bias">
+                        <div class="news-source-bias-title">
+                            <p>News Source</p>
+                        </div>
 
-                        <input type="checkbox" name="news-source-bias" id="neutral" value="neutral">
-                        <label for="neutral">Neutral</label><br>
+                        <div class="news-source-options">
+                            <div class="checkbox-spectrum">
+                                <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
+                                <label for="progressive"> Progressive</label><br>
+                            </div>
 
-                        <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
-                        <label for="conservative"> Conservative</label><br>
+                            <div class="checkbox-spectrum" style="padding-right: 29px;">
+                                <input type="checkbox" name="news-source-bias" id="neutral" value="neutral">
+                                <label for="neutral">Neutral</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-left: 3px;">
+                                <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
+                                <label for="conservative"> Conservative</label><br>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
 
-                <div class="search-button">
-                    <button>SEARCH</button>
+                    <div class="author-bias">
+                        <div class="author-bias-title">
+                            <p>Author Bias</p>
+                        </div>
+
+                        <div class="author-bias-options">
+                            <div class="checkbox-spectrum">
+                                <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
+                                <label for="progressive"> Progressive</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-right: 29px;">
+                                <input type="checkbox" name="news-source-bias" id="neutral" value="neutral">
+                                <label for="neutral">Neutral</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-left: 3px;">
+                                <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
+                                <label for="conservative"> Conservative</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-button">
+                        <button class="btn btn-primary">SEARCH</button>
+                    </div>
                 </div>
             </div>
        </div>
@@ -74,8 +90,12 @@
        <div class="bottom-half">
             <div class="need-statement-hackathon">
                 <div class="need-statement-container">
-                    <h2>Why we created title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis similique tempore, at voluptatem obcaecati delectus non fugiat aspernatur veniam vitae inventore deserunt aliquam, enim ad quasi magnam quod eum minus?</p>
+                    <div class="need-statement-title">
+                        <h2>Why we created The American News Spectrum</h2>
+                    </div>
+
+                    <div class="need-statement-content"></div>
+                    <p>We created The American News Spectrum in order to allow people the opportunity to view news from every political spectrum in one centralized location, so that Americans can understand point of view from people of all races, ethnicitys, and religions together. We hope you enjoy!</p>
                 </div>
                 <div class="hackathon-container">
                     <div class="tamuhack-picture">
@@ -94,21 +114,54 @@
                 </div>
 
                 <div class="people-cards">
-                    <div class="matthew-bunker">
-                        <p>matthew</p>
-                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Matthew Bunker</h5>
+                          <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Ultimate Frisbee</li>
+                          </ul>  
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Clinton Hastings</h5>
+                          <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Ultimate Frisbee</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Ryan Lastname</h5>
+                          <ul>
+                            <li>Major: Computing</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Ultimate Frisbee</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card card-text" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Antonio Lastname</h5>
+                          <ul>
+                            <li>Major: Mechanical Engineering</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Ultimate Frisbee</li>
+                          </ul>
+                        </div>
+                      </div>
                     
-                    <div class="clinton-hastings">
-                        <p>clinton</p>
-                    </div>
-
-                    <div class="ryan-lastname">
-                        <p>ryan</p>
-                    </div>
-
-                    <div class="antonio-lastname">
-                        <p>antonio</p>
-                    </div>
                 </div>
             </div>
        </div>
