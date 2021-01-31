@@ -1,3 +1,4 @@
 *.code-workspace
 secrets.json
 */__pycache__
+*.pyc
