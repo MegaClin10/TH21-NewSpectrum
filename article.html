@@ -27,29 +27,37 @@
         </div>
 
         <div class="article-name">
-            <h3>Article Title</h3>
+            <h3 id="artname">Article Title</h3>
         </div>
 
         <div class="author-name-container">
-            <h5>By: Author</h5>
+            <h5 id="authname">By: Author</h5>
         </div>
 
         <div class="fill-div">
             <div class="article-container">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque similique est assumenda suscipit numquam molestias minus facere, quia ut tempora laudantium neque illo, quaerat quibusdam laboriosam eos autem iure nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora dolorem, eos nesciunt rem dolor similique iusto quae quasi unde, maxime, ducimus animi quidem consequuntur. Incidunt dolore laboriosam nobis expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem quam quibusdam incidunt eum velit praesentium dicta labore molestiae impedit error quaerat, non ex temporibus accusantium dolores aspernatur eos magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam nesciunt sed consequuntur eum neque. Dolores quam facilis qui tempore nesciunt, inventore et quidem tempora, minima debitis quos, molestiae reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed obcaecati nemo dolorem repellat iure. Quia nemo porro modi error deserunt non repudiandae vel, fuga dicta nihil tempore eius ratione amet?</p>
+                <p id="cont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque similique est assumenda suscipit numquam molestias minus facere, quia ut tempora laudantium neque illo, quaerat quibusdam laboriosam eos autem iure nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora dolorem, eos nesciunt rem dolor similique iusto quae quasi unde, maxime, ducimus animi quidem consequuntur. Incidunt dolore laboriosam nobis expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem quam quibusdam incidunt eum velit praesentium dicta labore molestiae impedit error quaerat, non ex temporibus accusantium dolores aspernatur eos magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam nesciunt sed consequuntur eum neque. Dolores quam facilis qui tempore nesciunt, inventore et quidem tempora, minima debitis quos, molestiae reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed obcaecati nemo dolorem repellat iure. Quia nemo porro modi error deserunt non repudiandae vel, fuga dicta nihil tempore eius ratione amet?</p>
             </div>
         </div>
 
         <div class="source-container">
-            <h5>Source</h5>
+            <h5 id="src">Source</h5>
         </div>
 
-        <script>
-            function myFunction() {
-               var element = document.body;
-               element.classList.toggle("dark-mode");
-            }
-        </script>
+        <hr>
+
+        <div class="vote-container">
+            <div class="vote-text">
+                <h1>What did you think about this author?</h1>
+            </div>
+            <div class="vote-buttons" id="vote-buttons">
+                <button class="vote-button-p" onclick="pB()">Progressive</button>
+                <button class="vote-button-n" onclick="nB()">Neutral</button>
+                <button class="vote-button-c" onclick="cB()">Conservative</button>
+            </div>
+        </div>
+
+        <script src="scripts/article.js"></script>
 
         
     </body>
