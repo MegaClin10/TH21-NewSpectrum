@@ -154,3 +154,53 @@ body div {
     background-color: rgba(0,0,0,.815);
     color: white;
   }
+
+.vote-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vote-text {
+  display: flex;
+  justify-content: center;
+}
+
+.vote-text h1 {
+  font-size: 20px;
+}
+
+.vote-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.vote-buttons button {
+  margin: 10px;
+  width: 120px;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.5)
+}
+
+.vote-buttons button:focus {
+  box-shadow: none;
+  border: 0px;
+  outline: 0px;
+}
+
+.vote-button-p {
+  background-color: blue;
+}
+
+.vote-button-n {
+  background-color: purple;
+}
+
+.vote-button-c {
+  background-color: red;
+}
