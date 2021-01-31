@@ -29,10 +29,3 @@ async def get_articles(q: str):
     if articles:
         return ResponseModel(articles, "Articles retrieved successfully")
     return ErrorResponseModel("An error occured.", 404, "Not found in database")
-
-@router.get("/{", response_description="Article data retrieved")
-async def get_article_data(id):
-    article = await retrieve_article(id)
-    if article:
-        return ResponseModel(article, "Source data retrieved successfully")
-    return ErrorResponseModel("An error occured.", 404, "Source doesn't exist.")

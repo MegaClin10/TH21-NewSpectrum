@@ -61,9 +61,9 @@ async def add_author(author_data: dict) -> dict:
     new_author = author_collection.find_one({"_id": author.inserted_id})
     return author_helper(new_author)
 
-# Retrieve an author with a matching ID
-async def retrieve_author(id: str) -> dict:
-    author = author_collection.find_one({"_id": ObjectId(id)})
+# Retrieve an author with a matching name
+async def retrieve_author(name: str) -> dict:
+    author = author_collection.find_one({"name": name})
     if author:
         return author_helper(author)
 

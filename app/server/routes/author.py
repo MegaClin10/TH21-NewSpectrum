@@ -31,9 +31,9 @@ async def get_authors():
         return ResponseModel(authors, "Authors data retrieved successfully")
     return ResponseModel(authors, "Empty list returned")
 
-@router.get("/{id}", response_description="Author data retrieved")
-async def get_author_data(id):
-    author = await retrieve_author(id)
+@router.get("/", response_description="Author data retrieved")
+async def get_author_data(name: str):
+    author = await retrieve_author(name)
     if author:
         return ResponseModel(author, "Author data retrieved successfully")
     return ErrorResponseModel("An error occured.", 404, "Author doesn't exist.")
