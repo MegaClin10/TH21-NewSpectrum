@@ -23,7 +23,7 @@ def author_helper(author) -> dict:
         "rating": author["rating"],
         "consr_votes": author["consr_votes"],
         "libr_votes": author["libr_votes"],
-        "neutr-votes": author["neutr-votes"]
+        "neutr_votes": author["neutr_votes"]
     }
 
 def source_helper(source) -> dict:
