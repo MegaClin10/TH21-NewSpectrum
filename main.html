@@ -10,7 +10,7 @@
     <div class="top-box"></div>
     <label class="switch">
         <input type="checkbox">
-        <span class="slider round"  onclick="dm()"></span>
+        <span class="slider round"  onclick="myFunction()"></span>
     </label>
     <div class="title-container">
         <h1 class="title">The American News Spectrum</h1>
@@ -49,5 +49,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+           var searchBar = document.getElementById("search-bar");
+            searchBar.classList.toggle("search-bar-dark");
+        }
+        </script>
 </body>
 </html>
