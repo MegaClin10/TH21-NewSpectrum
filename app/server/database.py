@@ -16,6 +16,7 @@ db = client.TAMUhack
 
 author_collection = db.get_collection("authors")
 source_collection = db.get_collection("sources")
+article_collection = db.get_collection("cached-news")
 
 # helper methods
 
@@ -31,6 +32,19 @@ def source_helper(source) -> dict:
         "id": str(source["_id"]),
         "source": source["source"],
         "rating": source["rating"]
+    }
+
+def article_helper(article) -> dict: 
+    return {
+        "id": str(article["_id"]),
+        "source": article["source"],
+        "author": article["author"],
+        "title": article["title"],
+        "description": article["description"],
+        "url": article["url"],
+        "urlToImage": article["urlToImage"],
+        "publishedAt": article["publishedAt"],
+        "content": article["content"]
     }
 
 # CRUD operations
@@ -116,3 +130,16 @@ async def delete_source(id: str):
     if source:
         source_collection.delete_one({"_id": ObjectId(id)})
         return True
+
+# Retrieves all articles in the database
+async def retrieve_articles():
+    articles = []
+    for article in article_collection.find():
+        articles.append(article_helper(article))
+    return articles
+
+# Retrieves an article with a matching ID
+async def retrieve_article(id: str) -> dict:
+    article = article_collection.find_one({"_id": ObjectId(id)})
+    if article:
+        return article_helper(article)

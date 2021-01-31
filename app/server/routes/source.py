@@ -19,7 +19,7 @@ from server.models.source import (
 router = APIRouter()
 
 @router.post("/", response_description="Source data added into the database")
-async def add_source_data(source: SourceSchema = Body(...)):
+async def add_source_data(author: SourceSchema = Body(...)):
     source = jsonable_encoder(source)
     new_source = await add_source(source)
     return ResponseModel(new_source, "Source added successfully.")
