@@ -5,7 +5,7 @@ import json
 import os
 
 def get_news_everything(query):
-    newsapi = NewsApiClient(api_key=grab_credentials('news-api-key'))
+    newsapi = NewsApiClient(api_key=config.NEWS_API_KEY)
 
     data = check_database_existing(query)
     in_database = data["in_database"]
@@ -39,10 +39,6 @@ def check_database_existing(query):
     return data
 
 def connect_to_mongo_db():
-    client = MongoClient("mongodb+srv://worker:" + grab_credentials("mongo-service-key") + "@development.zukcn.mongodb.net/TAMUhack?retryWrites=true&w=majority")
+    client = MongoClient(config.MONGO_DETAILS)
     db = client.TAMUhack
     return db
-
-def grab_credentials(key):
-    NEWS_API_KEY = config('MONGO_DETAILS')
-    return NEWS_API_KEY
