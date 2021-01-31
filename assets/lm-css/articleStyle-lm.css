@@ -1,0 +1,66 @@
+ body{
+    background-color: rgb(253,246,236);
+}
+
+body div {
+      /* border: 1px solid black; */
+}
+
+
+.top-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/newspapers.jpg");
+    width: 100%;
+    height: 280px;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.back-button-container{
+    display: flex;
+    margin: 10px;
+}
+
+#back-button{
+    color: white;
+}
+
+.title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+} 
+
+.article-name{
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+    margin-bottom: 30px;
+}
+
+.author-name-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.fill-div{
+    display: flex;
+    justify-content: center;
+}
+
+.article-container{
+    display: flex;
+    text-align: center;
+    width: 75%;
+}
+
+.source-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+    margin-top: 30px;
+}
