@@ -1,0 +1,107 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/lm-css/authorStyle-lm.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Author Page</title>
+    </head>
+    <body>
+
+        <div class="top-box"></div>
+
+        <div class="buttons-container">
+            <div class="back-button-container">
+                <button type="button" class="btn btn-secondary"><a id="back-button" href="main.html">Go Back</a></button>
+            </div>
+            
+            <div class="dark-light-mode-button-container">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"  onclick="myFunction()"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>The American News Spectrum</h1>
+        </div>
+
+        <div class="author-title">
+            <h2 class="author-name" id="authname">Author Name</h2>
+        </div>
+
+        <div class="top-half">
+            <div class="author-picture">
+                <img src="assets/images/budding-heads.jfif" alt="">
+            </div>
+
+            <div class="fill-div">
+                <div class="stat-bar">
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-container w3-blue w3-round-xlarge" style="width:25%">25%</div>
+                        <div class="w3-container w3-red w3-round-xlarge" style="width:50%">50%</div>
+                        <div class="w3-container w3-purple w3-round-xlarge" style="width:25%">25%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-half">
+            <div class="stat-title">
+                <h2>Stats:</h2>
+            </div>
+
+            <div class="vote-count-container">
+                <div class="progressive-count">
+                    <h3>
+                        12,000 Progressive Votes
+                    </h3>
+                </div>
+        
+                <div class="neutral-count">
+                    <h3>
+                        1,000 Neutral Votes
+                    </h3>
+                </div>
+        
+                <div class="conservative-count">
+                    <h3>
+                        5,000 Conservative Votes
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-half">
+            <div class="news-article-title">
+                <h2>News Articles:</h2>
+            </div>
+
+            <div class="article-container">
+                <div class= "article">
+                    <div class="article-title">
+                        <h3 class="article-title" id="artname">Article title</h3>
+                    </div>
+
+                    <div class="article-desc">
+                        <p class="article-description" id="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab delectus ipsa ad fugit. Incidunt velit nisi ex recusandae repellat nesciunt iure voluptatem in. Earum autem a minima magnam consequatur?</p>
+                    </div>
+                    
+                    <div class="article-source">
+                        <h3 id="src">source</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/author.js"></script>
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+        </script>
+    </body>
+</html>

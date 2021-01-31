@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/lm-css/mainStyle-lm.css">
+    <title>News List</title>
+</head>
+<body class="dm">
+    <div class="top-box"></div>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"  onclick="myFunction()"></span>
+    </label>
+    <div class="title-container">
+        <h1 class="title">The American News Spectrum</h1>
+    </div>
+
+    <div class="search-bar-container">
+        <input class="search-bar" id="search-bar" placeholder="  &#x1f50e" type="text" >
+    </div>  
+
+    <div class="data-column">
+        <!-- These will both have to be added at runtime row by row -->
+        <div class="data-row-container">
+            <div class="data-row">
+                <div class="article">
+                    <div class="article-title">
+                        <h2 class="dm-text">Wall Street Angry At Gamestop</h2>
+                    </div>
+                    <div class="article-desc dm-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni suscipit rem corporis repellendus mollitia aspernatur optio expedita quaerat ut, est, dolore architecto fugit numquam asperiores animi deserunt adipisci aut.</p>
+                    </div>
+                    <div class="article-source">
+                        <h3 class="dm-text">Fox News</h3>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-name">
+                        <h4 class="dm-text">Clinton Hastings</h4>
+                    </div>
+                    <!-- <div class="author-picture">
+                        <img src="assets/images/megyn.jpg" alt="">
+                    </div> -->
+                    <div class="author-bias">
+                        <h4 class="dm-text">Progressive</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-row-container">
+            <div class="data-row">
+                <div class="article2">
+                    <div class="article-title">
+                        <h2 class="dm-text">Ryan Hall Thinks Hackathons Should be 72 Hours</h2>
+                    </div>
+                    <div class="article-desc dm-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni suscipit rem corporis repellendus mollitia aspernatur optio expedita quaerat ut, est, dolore architecto fugit numquam asperiores animi deserunt adipisci aut.</p>
+                    </div>
+                    <div class="article-source">
+                        <h3 class="dm-text">Ruters</h3>
+                    </div>
+                </div>
+                <div class="author2">
+                    <div class="author-name">
+                        <h4 class="dm-text">Ryan Hall</h4>
+                    </div>
+                    <!-- <div class="author-picture">
+                        <img src="assets/images/megyn.jpg" alt="">
+                    </div> -->
+                    <div class="author-bias">
+                        <h4 class="dm-text">Conservative</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-row-container">
+            <div class="data-row">
+                <div class="article3">
+                    <div class="article-title">
+                        <h2 class="dm-text">Students are Angry at Texas A&M for Cancelling Spring Break!</h2>
+                    </div>
+                    <div class="article-desc dm-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni suscipit rem corporis repellendus mollitia aspernatur optio expedita quaerat ut, est, dolore architecto fugit numquam asperiores animi deserunt adipisci aut.</p>
+                    </div>
+                    <div class="article-source">
+                        <h3 class="dm-text">Fox News</h3>
+                    </div>
+                </div>
+                <div class="author3">
+                    <div class="author-name">
+                        <h4 class="dm-text">Matthew Bunker</h4>
+                    </div>
+                    <!-- <div class="author-picture">
+                        <img src="assets/images/megyn.jpg" alt="">
+                    </div> -->
+                    <div class="author-bias">
+                        <h4 class="dm-text">Neutral</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-row-container">
+            <div class="data-row">
+                <div class="article4">
+                    <div class="article-title">
+                        <h2 class="dm-text">Antonio Shares His New Pasta Recipe with the Poor.</h2>
+                    </div>
+                    <div class="article-desc dm-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni suscipit rem corporis repellendus mollitia aspernatur optio expedita quaerat ut, est, dolore architecto fugit numquam asperiores animi deserunt adipisci aut.</p>
+                    </div>
+                    <div class="article-source">
+                        <h3 class="dm-text">CNN</h3>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-name">
+                        <h4 class="dm-text">Antonio Vellega</h4>
+                    </div>
+                    <!-- <div class="author-picture">
+                        <img src="assets/images/megyn.jpg" alt="">
+                    </div> -->
+                    <div class="author-bias">
+                        <h4 class="dm-text">Progressive</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+           var searchBar = document.getElementById("search-bar");
+            searchBar.classList.toggle("search-bar-dark");
+        }
+        </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

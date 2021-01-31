@@ -1,0 +1,198 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/lm-css/indexStyle-lm.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
+        rel="stylesheet"
+        />
+
+
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class="title-container">
+            <h1 class="title">The American News Spectrum</h1>
+        </div>
+
+       <div class="top-half">
+            <div class="slogan-picture">
+                <div class="slogan-container">
+                    <h3>The Latest Source of Bias-Free News</h3>
+                </div>
+                <!-- <div class="picture-container">
+                    <img src="assets/images/american-capital.jfif" alt="">
+                </div> -->
+            </div>
+
+            <div class="fill-div">
+                <div class="search-box-container">
+                    <div class="search-title">
+                        <h5>Search for Article</h5>
+                    </div>
+
+                    <div class="search-bar-landing">
+                        <div class="input-group">
+                            <div class="form-outline">
+                              <input id="search-input" type="search" id="form1" class="form-control" />
+                              <label class="form-label" for="form1">Topic...</label>
+                            </div>
+                            <a id="search-button" href="main.html"><button onclick=changePage() id="search-button" type="button" class="btn btn-primary">
+                                <i class="fas fa-search"></i>
+                            </button></a>
+                          </div>
+                    </div>
+
+                    <div class="news-source-bias">
+                        <div class="news-source-bias-title">
+                            <p>News Source</p>
+                        </div>
+
+                        <div class="news-source-options">
+                            <div class="checkbox-spectrum">
+                                <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
+                                <label for="progressive"> Progressive</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-right: 29px;">
+                                <input type="checkbox" name="news-source-bias" id="neutral" value="neutral" checked>
+                                <label for="neutral">Neutral</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-left: 3px;">
+                                <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
+                                <label for="conservative"> Conservative</label><br>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="author-bias">
+                        <div class="author-bias-title">
+                            <p>Author Bias</p>
+                        </div>
+
+                        <div class="author-bias-options">
+                            <div class="checkbox-spectrum">
+                                <input type="checkbox" name="news-source-bias" id="progressive" value="progressive">
+                                <label for="progressive"> Progressive</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-right: 29px;">
+                                <input type="checkbox" name="news-source-bias" id="neutral" value="neutral">
+                                <label for="neutral">Neutral</label><br>
+                            </div>
+
+                            <div class="checkbox-spectrum" style="padding-left: 3px;">
+                                <input type="checkbox" name="news-source-bias" id="conservative" value="conservative">
+                                <label for="conservative"> Conservative</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-button">
+                        <a><button class="btn btn-primary" onclick="changePage()">SEARCH</button></a>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       <div class="bottom-half">
+            <div class="need-statement-hackathon">
+                <div class="need-statement-container">
+                    <div class="need-statement-title">
+                        <h2>Why we created The American News Spectrum</h2>
+                    </div>
+
+                    <div class="need-statement-content">
+                        <p>We created The American News Spectrum in order to allow people the opportunity to view news from every political spectrum in one centralized location, so that Americans can understand point of view from people of all races, ethnicitys, and religions together. We hope you enjoy!</p>
+                    </div>
+                </div>
+                <div class="hackathon-container">
+                    <div class="tamuhack-picture">
+                        <img src="assets/images/1607712746478.jfif" alt="">
+                    </div>
+                    <div class="tamuhack-title">
+                        <h1>TAMU</h1>
+                        <h1>HACKATHON</h1>
+                        <h1>2021</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-container">
+                <div class="about-us-title">
+                    <h1>About Us</h1>
+                </div>
+
+                <div class="people-cards">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Matthew.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Matthew Bunker</h5>
+                          <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Ultimate Frisbee</li>
+                          </ul>  
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/clintman-copy (2).png" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Clinton Hastings</h5>
+                          <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Camping</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/Ryan.jpeg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Ryan Hall</h5>
+                          <ul>
+                            <li>Major: Computing</li>
+                            <li>Class: 2022</li>
+                            <li>Hobby: Hiking</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card card-text" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/antonio.jpg" alt="Card image cap">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Antonio Vellega</h5>
+                          <ul>
+                            <li>Major: Mechanical Engineering</li>
+                            <li>Class: 2021</li>
+                            <li>Hobby: Making Own Pasta</li>
+                          </ul>
+                        </div>
+                      </div>      
+                </div>
+            </div>
+       </div>
+
+       <script src="index.js"></script>
+       <script src="main.js"></script>
+    </body>
+</html>
