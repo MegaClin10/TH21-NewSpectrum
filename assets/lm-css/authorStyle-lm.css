@@ -10,6 +10,10 @@ body div {
     display: flex;
 }
 
+.back-button-container{
+    margin: 10px;
+}
+
 .dark-light-mode-button-container{
     display: flex;
     justify-content: flex-end;
