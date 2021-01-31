@@ -1,2 +1,3 @@
 *.code-workspace
 secrets.json
+*/__pycache__
