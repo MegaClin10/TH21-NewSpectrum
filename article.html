@@ -9,8 +9,17 @@
     <body>
         <div class="top-box"></div>
 
-        <div class="back-button-container">
-            <button type="button" class="btn btn-primary"><a id="back-button" href="main.html">Go Back</a></button>
+        <div class="buttons-container">
+            <div class="back-button-container">
+                <button type="button" class="btn btn-secondary"><a id="back-button" href="main.html">Go Back</a></button>
+            </div>
+
+            <div class="dark-light-mode-button-container">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"  onclick="myFunction()"></span>
+                </label>
+            </div>
         </div>
 
         <div class="title">
@@ -34,6 +43,13 @@
         <div class="source-container">
             <h5>Source</h5>
         </div>
+
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
 
         
     </body>
