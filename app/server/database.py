@@ -63,7 +63,7 @@ async def add_author(author_data: dict) -> dict:
 
 # Retrieve an author with a matching name
 async def retrieve_author(name: str) -> dict:
-    author = author_collection.find_one({"name": name})
+    author = author_collection.find_one({"fullname": name})
     if author:
         return author_helper(author)
 
