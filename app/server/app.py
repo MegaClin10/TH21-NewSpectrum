@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from server.routes.author import router as AuthorRouter
-from server.routes.source import router as SourceRouter
-from server.routes.article import router as ArticleRouter
+from app.server.routes.author import router as AuthorRouter
+from app.server.routes.source import router as SourceRouter
+from app.server.routes.article import router as ArticleRouter
 
 app = FastAPI()
 
